@@ -1,5 +1,11 @@
 package com.jeongk.designpattern.template;
 
+/**
+ * Template Pattern Test Class
+ * - 구체적인 처리를 하위 클래스에게 위임
+ * @author jk
+ *
+ */
 public class TestMain {
 	public static void main(String[] args) {
 		AbstractDisplay d1 = new CharDisplay('H');
