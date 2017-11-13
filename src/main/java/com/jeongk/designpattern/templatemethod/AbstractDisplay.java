@@ -1,4 +1,4 @@
-package com.jeongk.designpattern.template;
+package com.jeongk.designpattern.templatemethod;
 
 /**
  * 추상클래스

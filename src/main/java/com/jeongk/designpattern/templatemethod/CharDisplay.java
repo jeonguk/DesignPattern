@@ -1,4 +1,4 @@
-package com.jeongk.designpattern.template;
+package com.jeongk.designpattern.templatemethod;
 
 /**
  * AbstractDisplay 의 하위 클래스
