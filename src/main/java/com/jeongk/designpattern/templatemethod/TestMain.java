@@ -1,7 +1,7 @@
 package com.jeongk.designpattern.templatemethod;
 
 /**
- * Template Pattern Test Class
+ * Template Method Pattern Test Class
  * - 구체적인 처리를 하위 클래스에게 위임
  * @author jk
  *

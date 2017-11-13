@@ -4,6 +4,12 @@ import com.jeongk.designpattern.factorymethod.framework.Factory;
 import com.jeongk.designpattern.factorymethod.framework.Product;
 import com.jeongk.designpattern.factorymethod.idcard.IDCardFactory;
 
+/**
+ * Factory Method Pattern Test Class
+ * - 인스턴스 작성을 하위 클래스에게 위임
+ * @author jk
+ *
+ */
 public class TestMain {
 	public static void main(String[] args) {
 		Factory factory = new IDCardFactory();
