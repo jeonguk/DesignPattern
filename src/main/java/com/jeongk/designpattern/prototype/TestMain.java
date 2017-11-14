@@ -1,0 +1,36 @@
+package com.jeongk.designpattern.prototype;
+
+import com.jeongk.designpattern.prototype.framework.Manager;
+import com.jeongk.designpattern.prototype.framework.Product;
+
+/**
+ * Prototype Method Pattern Test Class
+ * - 복사해서 인스턴스를 만든다
+ * @author jk
+ *
+ */
+public class TestMain {
+	public static void main(String[] args) {
+		// 준비
+		Manager manager = new Manager();
+		
+		UnderlinePen upen = new UnderlinePen('~');
+		
+		MessageBox mbox = new MessageBox('*');
+		MessageBox sbox = new MessageBox('/');
+		
+		manager.register("strong message", upen);
+		manager.register("warning box", mbox);
+		manager.register("slash box", sbox);
+		
+		// 생성
+		Product p1 = manager.create("strong message");
+		p1.use("Hello, world");
+		
+		Product p2 = manager.create("warning box");
+		p2.use("Hello, world");
+		
+		Product p3 = manager.create("slash box");
+		p3.use("Hello, world");
+	}
+}
